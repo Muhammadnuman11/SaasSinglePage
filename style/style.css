@@ -1,0 +1,253 @@
+.navbar .navbarLogo, .navbar .navbarMenu, .navbar .navbarMenu .navbarMenuLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar .navbarLogo {
+  color: #222121;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 24px;
+}
+
+.navbar .navbarBars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbarBars {
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+  }
+}
+
+.navbar .navbarBars .b-line {
+  margin: 4px 0;
+  height: 4px;
+  width: 30px;
+  background-color: #222121;
+  border-radius: 15px;
+}
+
+.navbar .navbarMenu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbarMenu {
+    display: none;
+  }
+}
+
+.navbar .navbarMenu .navbarMenuLinks {
+  color: #222121;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar .navbarMenu .navbarMenuLinks:hover {
+  color: #f04267;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbarMenu .button {
+  padding: 14px 32px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f04267;
+  margin-left: 16px;
+  color: #f7f7f7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar .navbarMenu .button a {
+  position: relative;
+  z-index: 2;
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.navbar .navbarMenu .button::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fd2125;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .navbarMenu .button:hover:after {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.hero .heroContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 80vh;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .heroContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
+.hero .heroContainer .heroContainerLeft {
+  width: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .heroContainer .heroContainerLeft {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero .heroContainer .heroContainerLeft {
+    line-height: 1.5;
+  }
+}
+
+.hero .heroContainer .heroContainerLeft h1 {
+  font-size: 4rem;
+  color: #f04267;
+}
+
+@media screen and (max-width: 280px) {
+  .hero .heroContainer .heroContainerLeft h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero .heroContainer .heroContainerLeft h2 {
+  font-size: 4rem;
+  color: #222121;
+}
+
+@media screen and (max-width: 280px) {
+  .hero .heroContainer .heroContainerLeft h2 {
+    font-size: 2rem;
+  }
+}
+
+.hero .heroContainer .heroContainerLeft p {
+  font-size: 2rem;
+  color: #222121;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 280px) {
+  .hero .heroContainer .heroContainerLeft p {
+    font-size: 2rem;
+  }
+}
+
+.hero .heroContainer .heroContainerLeft .heroContainerBtn {
+  font-size: 1rem;
+  background: #f04267;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #f7f7f7;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.hero .heroContainer .heroContainerLeft .heroContainerBtn a {
+  position: relative;
+  z-index: 2;
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.hero .heroContainer .heroContainerLeft .heroContainerBtn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fd2125;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.hero .heroContainer .heroContainerLeft .heroContainerBtn:hover:after {
+  width: 100%;
+}
+
+.hero .heroContainer .heroContainerRight {
+  text-align: center;
+}
+
+.hero .heroContainer .heroContainerRightimg {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
